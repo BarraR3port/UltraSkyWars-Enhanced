@@ -4,8 +4,8 @@ This is a compiled version of the UltraSkyWars plugin, with some enhancements.
 I don't want to claim the ownership of this plugin, I just want to share it with the community.
 
 The SRC of this plugin was published by the owner(InsiderAnh) time ago in
-the [![spigot page](https://www.spigotmc.org/resources/ultra-skywars-cubelets-mobfriends-parties-perks-soulwell-challenges-votes-custom-chest.84497/)](
-) so I decided to compile it and maybe give it a little bit of life.
+the [Spigot](https://www.spigotmc.org/resources/ultra-skywars-cubelets-mobfriends-parties-perks-soulwell-challenges-votes-custom-chest.84497)
+so I decided to compile it and maybe give it a little bit of life.
 
 ## Versions Supported
 
