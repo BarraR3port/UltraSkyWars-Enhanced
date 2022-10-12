@@ -1,0 +1,25 @@
+book:
+  author: "InsiderAnh"
+  title: "&cTNT Madness"
+  pages:
+    - "Este es el modo laboratorio, &cTNT Madness &0todas las TNT son diferentes."
+items:
+  book:
+    nameItem: "&5Laboratory Mode"
+    loreItem: |-
+      &7Informacion del modo laboratorio.
+  tntLaunchpad:
+    nameItem: "&cTNT Launchpad"
+    loreItem: |-
+      &7Esto te generara un cañon de
+      &7TNT.
+  instantBoom:
+    nameItem: "&cInstant Boom"
+    loreItem: |-
+      &7Esto te impulsara al momento de ponerlo
+      &7TNT.
+  normalTNT:
+    nameItem: "&cTNT"
+    loreItem: |-
+      &7Al poner esta tnt se encendera
+      &7automaticamente.

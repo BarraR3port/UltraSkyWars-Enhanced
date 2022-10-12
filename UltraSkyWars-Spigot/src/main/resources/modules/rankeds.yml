@@ -1,0 +1,250 @@
+duration: 30
+timeUnit: DAYS
+passed: "&cThis season has passed."
+now: "&eThis is the current season."
+format: " &e#<min> &8- &e#<max>"
+elos:
+  random:
+    enabled: false
+    min: 1
+    max: 10
+  exactly:
+    kill: 3
+    win: 5
+    death: -1
+data:
+  season: 0
+  finish: 1590000000
+menus:
+  main:
+    nameItem: "&aRanked Rewards"
+    loreItem: |-
+      &8Ranked Season <season>
+      &7
+      &7Rating Actual: &e<rating>
+      &7Last Season Rating: &e<lastRating>
+      &7
+      &7Total Wins in Ranked: &e<wins>
+      &7Total Kills in Ranked: &e<kills>
+      &7
+      &eClick to see ranked rewards!
+  title: "Ranked Rewards"
+  passed: "&cThe season <season> has finished!"
+  now: |-
+    &eActual season!
+    &7
+    &7Estimated ratings:
+    <divisions>
+  division: "&7Division of <division>&7: &e<amount>"
+  season:
+    nameItem: "&aReward of Season <season>"
+    loreItem: |-
+      &7
+      <status>
+divisions:
+  masters:
+    order: 0
+    icon:
+      material: EMERALD_BLOCK
+      amount: 1
+      data: 0
+    top:
+      min: 1
+      max: 10
+    name: "&2Masters Division"
+    lore:
+      - "&7"
+      - "&3350000 &7UltraSkyWars Experience"
+      - "&6150000 &7UltraSkyWars Coins"
+      - "&7"
+      - "&712 hours of Booster of &67x Coins"
+      - "&7"
+      - "&8+ &bThor Kill Effect."
+      - "&8+ &bWither Kill Sound."
+      - "&8+ &bHearts Trails."
+      - "&7"
+      - "&8+ &eSeason <season> &7rewards."
+      - "&8+ &6Steve of End Hat"
+      - "&7"
+      - "<status>"
+    ranks:
+      - grancampeonV
+      - campeonV
+      - campeonIV
+      - campeonIII
+    rewards:
+      commands:
+        - sw xp add <player> 350000
+        - sw coins add <player> 150000
+  diamonds:
+    order: 1
+    icon:
+      material: DIAMOND_BLOCK
+      amount: 1
+      data: 0
+    top:
+      min: 11
+      max: 200
+    name: "&bDiamond Division"
+    lore:
+      - "&7"
+      - "&31750000 &7UltraSkyWars Experience"
+      - "&6100000 &7UltraSkyWars Coins"
+      - "&7"
+      - "&712 hours of Booster of &67x Coins"
+      - "&7"
+      - "&8+ &bThor Kill Effect."
+      - "&8+ &bWither Kill Sound."
+      - "&8+ &bHearts Trails."
+      - "&7"
+      - "&8+ &eSeason <season> &7rewards."
+      - "&8+ &6Steve of End Hat"
+      - "&7"
+      - "<status>"
+    ranks:
+      - campeonII
+      - campeonI
+      - diamondV
+      - diamondIV
+      - diamondIII
+      - diamondII
+      - diamondI
+    rewards:
+      commands:
+        - sw xp add <player> 350000
+        - sw coins add <player> 150000
+  golds:
+    order: 2
+    icon:
+      material: GOLD_BLOCK
+      amount: 1
+      data: 0
+    top:
+      min: 201
+      max: 1500
+    name: "&6Gold Division"
+    lore:
+      - "&7"
+      - "&310000 &7UltraSkyWars Experience"
+      - "&645000 &7UltraSkyWars Coins"
+      - "&7"
+      - "&712 hours of Booster of &67x Coins"
+      - "&7"
+      - "&8+ &bThor Kill Effect."
+      - "&8+ &bWither Kill Sound."
+      - "&8+ &bHearts Trails."
+      - "&7"
+      - "&8+ &eSeason <season> &7rewards."
+      - "&8+ &6Steve of End Hat"
+      - "&7"
+      - "<status>"
+    ranks:
+      - goldV
+      - goldIV
+      - goldIII
+      - goldII
+      - goldI
+    rewards:
+      commands:
+        - sw xp add <player> 350000
+        - sw coins add <player> 150000
+  irons:
+    order: 3
+    icon:
+      material: IRON_BLOCK
+      amount: 1
+      data: 0
+    top:
+      min: 1501
+      max: 5000
+    name: "&7Iron Division"
+    lore:
+      - "&7"
+      - "&3350000 &7UltraSkyWars Experience"
+      - "&6150000 &7UltraSkyWars Coins"
+      - "&7"
+      - "&712 hours of Booster of &67x Coins"
+      - "&7"
+      - "&8+ &bThor Kill Effect."
+      - "&8+ &bWither Kill Sound."
+      - "&8+ &bHearts Trails."
+      - "&7"
+      - "&8+ &eSeason <season> &7rewards."
+      - "&8+ &6Steve of End Hat"
+      - "&7"
+      - "<status>"
+    ranks:
+      - ironV
+      - ironIV
+      - ironIII
+      - ironII
+    rewards:
+      commands:
+        - sw xp add <player> 350000
+        - sw coins add <player> 150000
+  bronzes:
+    order: 4
+    icon:
+      material: STONE
+      amount: 1
+      data: 0
+    top:
+      min: 5001
+      max: 20000
+    name: "&8Stone Division"
+    lore:
+      - "&7"
+      - "&330000 &7UltraSkyWars Experience"
+      - "&615000 &7UltraSkyWars Coins"
+      - "&7"
+      - "&712 hours of Booster of &67x Coins"
+      - "&7"
+      - "&8+ &bThor Kill Effect."
+      - "&8+ &bWither Kill Sound."
+      - "&8+ &bHearts Trails."
+      - "&7"
+      - "&8+ &eSeason <season> &7rewards."
+      - "&8+ &6Steve of End Hat"
+      - "&7"
+      - "<status>"
+    ranks:
+      - ironI
+      - bronzeV
+      - bronzeIV
+    rewards:
+      commands:
+        - sw xp add <player> 350000
+        - sw coins add <player> 150000
+  woods:
+    order: 5
+    icon:
+      material: WOOD
+      amount: 1
+      data: 0
+    top:
+      min: 20001
+      max: 50000
+    name: "&eWood Division"
+    lore:
+      - "&7"
+      - "&3350000 &7UltraSkyWars Experience"
+      - "&6150000 &7UltraSkyWars Coins"
+      - "&7"
+      - "&712 hours of Booster of &67x Coins"
+      - "&7"
+      - "&8+ &bThor Kill Effect."
+      - "&8+ &bWither Kill Sound."
+      - "&8+ &bHearts Trails."
+      - "&7"
+      - "&8+ &eSeason <season> &7rewards."
+      - "&8+ &6Steve of End Hat"
+      - "&7"
+      - "<status>"
+    ranks:
+      - bronzeIII
+      - bronzeII
+      - bronzeI
+    rewards:
+      commands:
+        - sw xp add <player> 350000
+        - sw coins add <player> 150000

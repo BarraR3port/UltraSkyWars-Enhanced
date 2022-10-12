@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+  ~ Copyright (c) 2022.
+  ~
+  ~  This program/library is free software: you can redistribute it and/or modify
+  ~ it under the terms of the New BSD License (3-clause license).
+  ~
+  ~ This program/library is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  ~ FITNESS FOR A PARTICULAR PURPOSE. See the New BSD License (3-clause license)
+  ~ for more details.
+  ~
+  ~ You should have received a copy of the New BSD License (3-clause license)
+  ~ along with this program/library; If not, see http://directory.fsf.org/wiki/License:BSD_3Clause/
+  ~ for the New BSD License (3-clause license).
+  ~
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>nms_1_12_R1</artifactId>
+    <version>${parent.version}</version>
+
+    <parent>
+        <artifactId>UltraSkyWars</artifactId>
+        <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+        <version>9.0.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>api</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+
+        </plugins>
+    </build>
+</project>

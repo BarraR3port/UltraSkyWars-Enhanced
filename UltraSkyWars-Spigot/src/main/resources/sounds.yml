@@ -1,0 +1,209 @@
+sounds:
+  PERK_NO_COINS:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 1.0
+  PERK_LOCKED:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 1.0
+  PERK_MAXED:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 1.0
+  PERK_BUY:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.0
+  PERK_OFF:
+    sound: NOTE_STICKS
+    volume: 1.0
+    pitch: 1.0
+  PERK_ON:
+    sound: NOTE_STICKS
+    volume: 1.0
+    pitch: 1.0
+  TNT_LAUNCH_EXPLODE:
+    sound: ENTITY_GENERIC_EXPLODE
+    volume: 1.0
+    pitch: 1.0
+  SOUP_EAT:
+    sound: ENTITY_GENERIC_EAT
+    volume: 1.0
+    pitch: 1.0
+  PRESTIGE_NO_HAS:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 1.0
+  PRESTIGE_SELECT:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.0
+  PRESTIGE_ALREADY_SELECTED:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 10.0
+  COLLECT_HEAD:
+    sound: ENTITY_PLAYER_ATTACK_STRONG
+    volume: 1.0
+    pitch: 1.0
+  JOIN_PLAYER:
+    sound: NOTE_STICKS
+    volume: 1.0
+    pitch: 1.0
+  WINEFFECTS_VULCANWOOL:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 1.0
+    pitch: 1.0
+  WINEFFECTS_VULCANFIRE:
+    sound: BLOCK_FIRE_AMBIENT
+    volume: 1.0
+    pitch: 1.0
+  WINEFFECTS_NOTES:
+    sound: ENTITY_FIREWORK_ROCKET_LAUNCH
+    volume: 1.0
+    pitch: 1.0
+  WINEFFECTS_CHICKEN:
+    sound: ENTITY_FIREWORK_ROCKET_LAUNCH
+    volume: 1.0
+    pitch: 1.0
+  NOBUY:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 1.0
+  SOULWELL:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 10.0
+    pitch: 10.0
+  STARTING:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.0
+  PREGAME:
+    sound: ENTITY_PLAYER_ATTACK_STRONG
+    volume: 1.0
+    pitch: 1.0
+  CANCELSTART:
+    sound: BLOCK_NOTE_BLOCK_BASS
+    volume: 1.0
+    pitch: 1.0
+  UPGRADE:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+  DEGRADE:
+    sound: ENTITY_VILLAGER_NO
+    volume: 1.0
+    pitch: 1.0
+  NOSOULS:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 1.0
+  CUBELETS_ANI1:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.0
+  CUBELETS_ANI3:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.0
+  CUBELETS_REWARD:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+  REWARDS_COMMON:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 10.0
+    pitch: 1.0
+  REWARDS_UNCOMMON:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 10.0
+    pitch: 1.0
+  REWARDS_RARE:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 10.0
+    pitch: 1.0
+  REWARDS_EPIC:
+    sound: ENTITY_ENDER_DRAGON_GROWL
+    volume: 10.0
+    pitch: 1.0
+  REWARDS_LEGENDARY:
+    sound: ENTITY_ENDER_DRAGON_GROWL
+    volume: 10.0
+    pitch: 1.0
+  KILLEFFECTS_TNT:
+    sound: ENTITY_GENERIC_EXPLODE
+    volume: 1.0
+    pitch: 1.0
+  KILLEFFECTS_SQUID:
+    sound: ENTITY_ITEM_PICKUP
+    volume: 1.0
+    pitch: 1.0
+  KILLEFFECTS_HEAD:
+    sound: ENTITY_ITEM_PICKUP
+    volume: 1.0
+    pitch: 1.0
+  EVENTS_BORDER:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+  EVENTS_DRAGON:
+    sound: ENTITY_ENDER_DRAGON_GROWL
+    volume: 1.0
+    pitch: 1.0
+  EVENTS_REFILL:
+    sound: BLOCK_CHEST_OPEN
+    volume: 1.0
+    pitch: 1.0
+  EVENTS_NONE:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+  EVENTS_TNT:
+    sound: ENTITY_GENERIC_EXPLODE
+    volume: 1.0
+    pitch: 1.0
+  EVENTS_WITHER:
+    sound: ENTITY_WITHER_HURT
+    volume: 1.0
+    pitch: 1.0
+  EVENTS_ZOMBIE:
+    sound: ENTITY_ZOMBIE_HURT
+    volume: 1.0
+    pitch: 1.0
+  QUIT_PLAYER:
+    sound: NOTE_STICKS
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_BLAZE_1:
+    sound: BLOCK_NOTE_BLOCK_HAT
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_BLAZE_2:
+    sound: BLOCK_FIRE_AMBIENT
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_BLAZE_3:
+    sound: ENTITY_BLAZE_AMBIENT
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_BLAZE_4:
+    sound: ENTITY_BLAZE_HURT
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_BLAZE_5:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_BLAZE_6:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_3D_1:
+    sound: UI_BUTTON_CLICK
+    volume: 1.0
+    pitch: 1.0
+  SOUL_ANIMATION_3D_2:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0

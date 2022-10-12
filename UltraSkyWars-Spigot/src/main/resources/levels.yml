@@ -1,0 +1,158 @@
+version: 8
+prestige:
+  icon1:
+    id: icon1
+    prefix: ⋆
+    name: Default
+    lore: |-
+      &7This is the prestige default icon.
+      &7
+      &f[<level><icon>] &7<name>
+      &7
+      <status>
+    material: NETHER_STAR
+    slot: 10
+    page: 1
+    requirements:
+      level: 0
+      angelDeath: 0
+      perms: "none"
+  radiactive:
+    id: radiactive
+    prefix: ☢
+    name: Radiactive
+    lore: |-
+      &7This is the prestige default icon.
+      &7
+      &f[<level><icon>] &7<name>
+      &7
+      <status>
+    material: NETHER_STAR
+    slot: 11
+    page: 1
+    requirements:
+      level: 0
+      angelDeath: 0
+      perm: "ultraskywars.prestige.radiactive"
+  angel1:
+    id: angel1
+    prefix: ❄
+    name: Angel of Death I
+    lore: |-
+      &7This is the prestige default icon.
+      &7
+      &f[<level><icon>] &7<name>
+      &7
+      <status>
+    material: NETHER_STAR
+    slot: 12
+    page: 1
+    requirements:
+      level: 0
+      angelDeath: 1
+      perm: "ultraskywars.prestige.angel1"
+  angel2:
+    id: angel2
+    prefix: ❅
+    name: Angel of Death II
+    lore: |-
+      &7This is the prestige default icon.
+      &7
+      &f[<level><icon>] &7<name>
+      &7
+      <status>
+    material: NETHER_STAR
+    slot: 13
+    page: 1
+    requirements:
+      level: 0
+      angelDeath: 2
+      perm: "ultraskywars.prestige.angel2"
+  angel3:
+    id: angel3
+    prefix: ❆
+    name: Angel of Death III
+    lore: |-
+      &7This is the prestige default icon.
+      &7
+      &f[<level><icon>] &7<name>
+      &7
+      <status>
+    material: NETHER_STAR
+    slot: 14
+    page: 1
+    requirements:
+      level: 0
+      angelDeath: 3
+      perm: "ultraskywars.prestige.angel3"
+levels:
+  level1:
+    level: 1
+    xp: 0
+    levelUp: 500
+    prefix: "&fLvl I"
+    rewards:
+      - "/eco give <player> 10"
+  level2:
+    level: 2
+    xp: 500
+    levelUp: 1000
+    prefix: "&fLvl II"
+    rewards:
+      - "/eco give <player> 20"
+  level3:
+    level: 3
+    xp: 1000
+    levelUp: 1600
+    prefix: "&fLvl III"
+    rewards:
+      - "/eco give <player> 30"
+  level4:
+    level: 4
+    xp: 1600
+    levelUp: 2000
+    prefix: "&fLvl IV"
+    rewards:
+      - "/eco give <player> 40"
+  level5:
+    level: 5
+    xp: 2000
+    levelUp: 2500
+    prefix: "&fLvl V"
+    rewards:
+      - "/eco give <player> 50"
+  level6:
+    level: 6
+    xp: 2500
+    levelUp: 3200
+    prefix: "&fLvl VI"
+    rewards:
+      - "/eco give <player> 60"
+  level7:
+    level: 7
+    xp: 3200
+    levelUp: 3700
+    prefix: "&fLvl VII"
+    rewards:
+      - "/eco give <player> 70"
+  level8:
+    level: 8
+    xp: 3700
+    levelUp: 4300
+    prefix: "&fLvl VIII"
+    rewards:
+      - "/eco give <player> 80"
+  level9:
+    level: 9
+    xp: 4300
+    levelUp: 5000
+    prefix: "&fLvl IX"
+    rewards:
+      - "/eco give <player> 90"
+  level10:
+    level: 10
+    xp: 5000
+    levelUp: 999999
+    prefix: "&fLvl X"
+    rewards:
+      - "/eco give <player> 100"

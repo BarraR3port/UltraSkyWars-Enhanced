@@ -1,0 +1,19 @@
+options:
+  lobbyWorld: exampleLobby
+  opBypass: false
+  joinTeleport: true
+  voidTeleport: true
+  noBreak: true
+  noPlace: true
+  noDamage: true
+  noHunger: true
+  noWeather: true
+  noExplosion: true
+  noDayCycle: true
+  noMobSpawn: true
+  noDrop: true
+  noBreakFarm: true
+  interactBlocked:
+    - CHEST
+    - ANVIL
+    - ENCHANTMENT_TABLE

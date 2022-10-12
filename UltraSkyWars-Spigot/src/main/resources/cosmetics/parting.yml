@@ -1,0 +1,21 @@
+partings:
+  Default:
+    id: 0
+    name: Default
+    permission: ultraskywars.parting.Default
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ARMOR_STAND
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDefault
+        lore:
+          - §7This is a default lore.
+          - §7Change me in parting.yml
+    slot: 10
+    page: 1
+    price: 500
+    isBuy: true
+    message:
+      - '§fGood bye friends'

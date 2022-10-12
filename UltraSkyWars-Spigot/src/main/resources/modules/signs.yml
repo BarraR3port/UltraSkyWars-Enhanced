@@ -1,0 +1,45 @@
+texts:
+  states:
+    waiting: "&aWaiting"
+    starting: "&eStarting"
+    pregame: "&6PreGame"
+    game: "&4In Game"
+    finish: "&9Finish"
+    restarting: "&5Restarting"
+    empty: "&f"
+  lines:
+    waiting:
+      1: "&lSkyWars"
+      2: "<color>&n<map>"
+      3: "<state>"
+      4: "&8<players>/<max>"
+    starting:
+      1: "&lSkyWars"
+      2: "<color>&n<map>"
+      3: "<state>"
+      4: "&8<players>/<max>"
+    pregame:
+      1: "&lSkyWars"
+      2: "<color>&n<map>"
+      3: "<state>"
+      4: "&8<players>/<max>"
+    game:
+      1: "&lSkyWars"
+      2: "<color>&n<map>"
+      3: "<state>"
+      4: "&8<players>/<max>"
+    finish:
+      1: "&lSkyWars"
+      2: "<color>&n<map>"
+      3: "<state>"
+      4: "&8<players>/<max>"
+    restarting:
+      1: "&lSkyWars"
+      2: "<color>&n<map>"
+      3: "<state>"
+      4: "&8<players>/<max>"
+    empty:
+      1: "&5&m---------------"
+      2: "&9Searching"
+      3: "&9Game..."
+      4: "&5&m---------------"

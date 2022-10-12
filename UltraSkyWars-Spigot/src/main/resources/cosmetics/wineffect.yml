@@ -1,0 +1,233 @@
+wineffects:
+  fireworks:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aFireworks
+        lore:
+          - '§eDescription:'
+          - §7Fireworks, the effect
+          - §7for all ;D
+          - §7
+          - <status>
+    type: fireworks
+    name: "Fireworks"
+    price: 0
+    isBuy: false
+    slot: 10
+    page: 1
+    permission: ultraskywars.wineffects.fireworks
+  vulcanwool:
+    id: 1
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOL
+      damage: 14
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aVulcano Wool
+        lore:
+          - '§eDescription:'
+          - §7Wool volcano, give it color
+          - §7your life <3 w <3
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: vulcanwool
+    name: "Vulcan Wool"
+    price: 2000
+    isBuy: true
+    slot: 11
+    page: 1
+    permission: ultraskywars.wineffects.vulcanwool
+  vulcanfire:
+    id: 2
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK_CHARGE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aFire Volcano
+        lore:
+          - '§eDescription:'
+          - §7Fire volcano, give it color
+          - §7to your hot life :>
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: vulcanfire
+    name: "Vulcan Fire"
+    price: 2500
+    isBuy: true
+    slot: 12
+    page: 1
+    permission: ultraskywars.wineffects.vulcanfire
+  icewalker:
+    id: 3
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ICE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aIce Walker
+        lore:
+          - '§eDescription:'
+          - §7Ice appears as he walks.
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: icewalker
+    name: "Ice Walker"
+    price: 2500
+    isBuy: true
+    slot: 13
+    page: 1
+    permission: ultraskywars.wineffects.icewalker
+  notes:
+    id: 4
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GREEN_RECORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aNotes
+        lore:
+          - '§eDescription:'
+          - §7Notes appaer about you.
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: notes
+    name: "Notes"
+    price: 2500
+    isBuy: true
+    slot: 14
+    page: 1
+    permission: ultraskywars.wineffects.notes
+  chickens:
+    id: 5
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: EGG
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aChickens
+        lore:
+          - '§eDescription:'
+          - §7Chickens will show up around you.
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: chickens
+    name: "chickens"
+    price: 2500
+    isBuy: true
+    slot: 15
+    page: 1
+    permission: ultraskywars.wineffects.chickens
+  guardian:
+    id: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: PRISMARINE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aGuardians
+        lore:
+          - '§eDescription:'
+          - §7Guardians will honor you.
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: guardian
+    name: "guardian"
+    price: 2500
+    isBuy: true
+    slot: 16
+    page: 1
+    permission: ultraskywars.wineffects.guardian
+  dragon:
+    id: 7
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: DRAGON_EGG
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDragon Rider
+        lore:
+          - '§eDescription:'
+          - §7Dragon spawn and you ride.
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: dragon
+    name: "dragon"
+    price: 2500
+    isBuy: true
+    slot: 19
+    page: 1
+    permission: ultraskywars.wineffects.dragon
+  wither:
+    id: 8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aWither Rider
+        lore:
+          - '§eDescription:'
+          - §7Wither spawn and you ride.
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: wither
+    name: "wither"
+    price: 2500
+    isBuy: true
+    slot: 20
+    page: 1
+    permission: ultraskywars.wineffects.wither
+  daredevil:
+    id: 9
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SADDLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDare Devil
+        lore:
+          - '§eDescription:'
+          - §7Horse spawn and you ride.
+          - §7
+          - <price>
+          - §7
+          - <status>
+    type: daredevil
+    name: "daredevil"
+    price: 2500
+    isBuy: true
+    slot: 21
+    page: 1
+    permission: ultraskywars.wineffects.daredevil

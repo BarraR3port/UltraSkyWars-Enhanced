@@ -1,0 +1,8 @@
+main: io.github.Leonardo0013YT.UltraSkyWarsSetup.UltraSkyWarsSetup
+author: Leonardo0013YT
+name: UltraSkyWars-Setup
+version: 9.0.0
+depend: [ UltraSkyWars ]
+commands:
+  sws:
+    aliases: [ swsetup, skywarssetup, skywarss ]

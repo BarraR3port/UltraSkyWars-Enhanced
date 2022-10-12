@@ -1,0 +1,116 @@
+taunts:
+  prueba:
+    id: 0
+    name: prueba
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDefault
+        lore:
+          - §7This is a default taunt
+          - §7
+          - <price>
+          - §7
+          - §eRight-Click to preview!
+          - <status>
+    title: §c§lYOU ARE DEATH
+    subtitle: §7Now you spectate game!
+    player: §e by §7<killer>§e.
+    none: §e.
+    slot: 10
+    page: 1
+    price: 500
+    permission: ultraskywars.taunt.prueba
+    isBuy: true
+    taunts:
+      CONTACT:
+        cause: CONTACT
+        msg:
+          - <death> §ewas killed
+      LAVA:
+        cause: LAVA
+        msg:
+          - <death> §edrowned in lava
+      DROWNING:
+        cause: DROWNING
+        msg:
+          - <death> §edrowned in water
+      LIGHTNING:
+        cause: LIGHTNING
+        msg:
+          - <death> §ewas punished by zeus
+      FALLING_BLOCK:
+        cause: FALLING_BLOCK
+        msg:
+          - <death> §eI dropped a block in his head
+      FIRE_TICK:
+        cause: FIRE_TICK
+        msg:
+          - <death> §eburned to death
+      ENTITY_EXPLOSION:
+        cause: ENTITY_EXPLOSION
+        msg:
+          - <death> §eexploded into a thousand pieces
+      THORNS:
+        cause: THORNS
+        msg:
+          - <death> §ekilled himself
+      ENTITY_ATTACK:
+        cause: ENTITY_ATTACK
+        msg:
+          - <death> §ewas killed
+      SUFFOCATION:
+        cause: SUFFOCATION
+        msg:
+          - <death> §ewas suffocated
+      WITHER:
+        cause: WITHER
+        msg:
+          - <death> §ekilled by a wither
+      FIRE:
+        cause: FIRE
+        msg:
+          - <death> §eburned to death
+      MELTING:
+        cause: MELTING
+        msg:
+          - <death> §ekilled embarrassingly
+      MAGIC:
+        cause: MAGIC
+        msg:
+          - <death> §edied magically
+      PROJECTILE:
+        cause: PROJECTILE
+        msg:
+          - <death> §ewas shot
+      BLOCK_EXPLOSION:
+        cause: BLOCK_EXPLOSION
+        msg:
+          - <death> §eexploded into a thousand pieces
+      POISON:
+        cause: POISON
+        msg:
+          - <death> §edied magically
+      CUSTOM:
+        cause: CUSTOM
+        msg:
+          - <death> §edied of unknown causes
+      STARVATION:
+        cause: STARVATION
+        msg:
+          - <death> §estarved to death
+      FALL:
+        cause: FALL
+        msg:
+          - <death> §efell to his death
+      SUICIDE:
+        cause: SUICIDE
+        msg:
+          - <death> §ewas rejected by his girlfriend and killed himself
+      VOID:
+        cause: VOID
+        msg:
+          - <death> §eshot himself into the void

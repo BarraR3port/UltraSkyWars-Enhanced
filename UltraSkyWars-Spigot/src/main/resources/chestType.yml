@@ -1,0 +1,134 @@
+defaultType: NORMAL
+types:
+  basic:
+    key: basic
+    edit: '{CHESTBASIC}'
+    slots:
+      setup: 11
+      votes: 11
+  normal:
+    key: normal
+    edit: '{CHESTNORMAL}'
+    slots:
+      setup: 13
+      votes: 13
+  op:
+    key: op
+    edit: '{CHESTOP}'
+    slots:
+      setup: 15
+      votes: 15
+votes:
+  chest:
+    name: "Chest"
+    basic: "Basic"
+    normal: "Normal"
+    op: "Op"
+lang:
+  chest:
+    title: "&eVote Type Chest"
+    basic:
+      nameItem: "&7Basic Chest"
+      loreItem: |-
+        &7The chests will contain
+        &7very simple things.
+        &7
+        &eVotes: &b<basicChest>
+        &7
+        &eClick to vote!
+    normal:
+      nameItem: "&6Normal Chest"
+      loreItem: |-
+        &7The chests will contain
+        &7very normal things.
+        &7
+        &eVotes: &b<normalChest>
+        &7
+        &eClick to vote!
+    op:
+      nameItem: "&4Op Chest"
+      loreItem: |-
+        &7The chests will contain
+        &7very good things.
+        &7
+        &eVotes: &b<opChest>
+        &7
+        &eClick to vote!
+  chests:
+    title: "&eSetup Chest"
+    basic:
+      nameItem: "&7Basic Chest"
+      loreItem: |-
+        &7Click to open menu to
+        &7setup Basic Chest items.
+        &7
+        &eClick to open!
+    normal:
+      nameItem: "&6Normal Chest"
+      loreItem: |-
+        &7Click to open menu to
+        &7setup Normal Chest items.
+        &7
+        &eClick to open!
+    op:
+      nameItem: "&4OP Chest"
+      loreItem: |-
+        &7Click to open menu to
+        &7setup OP Chest items.
+        &7
+        &eClick to open!
+menus:
+  chest:
+    rows: 3
+    items:
+      '11':
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          display-name: '{CHESTBASIC}'
+          repair-cost: 1
+      '13':
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{CHESTNORMAL}'
+          repair-cost: 1
+      '15':
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{CHESTOP}'
+          repair-cost: 1
+  chests:
+    rows: 3
+    items:
+      '11':
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          display-name: '{CHESTBASIC}'
+          repair-cost: 1
+      '13':
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{CHESTNORMAL}'
+          repair-cost: 1
+      '15':
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{CHESTOP}'
+          repair-cost: 1

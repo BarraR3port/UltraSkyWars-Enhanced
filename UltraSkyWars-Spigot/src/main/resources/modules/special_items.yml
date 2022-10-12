@@ -1,0 +1,18 @@
+items:
+  compass:
+    noTarget: "&cThere are no players nearby to tag."
+    targeted: "&aThe &e<player>&a player has been tag by you."
+    countdown: "&cYou have to wait &e<time>&c seconds to use this again."
+    range: 100
+    time: 3
+  instantTNT:
+    fuse_ticks: 40
+  TNTLaunch:
+    noFall: 5
+    multiply: 2.5
+  soup:
+    maxHealth: "&cYou've got all the health."
+    hearts: 2.5
+  endBuff:
+    countdown: "&cYou have to wait &e<time>&c seconds to use this again."
+    time: 3

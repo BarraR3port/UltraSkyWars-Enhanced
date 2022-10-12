@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+  ~ Copyright (c) 2022.
+  ~
+  ~  This program/library is free software: you can redistribute it and/or modify
+  ~ it under the terms of the New BSD License (3-clause license).
+  ~
+  ~ This program/library is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  ~ FITNESS FOR A PARTICULAR PURPOSE. See the New BSD License (3-clause license)
+  ~ for more details.
+  ~
+  ~ You should have received a copy of the New BSD License (3-clause license)
+  ~ along with this program/library; If not, see http://directory.fsf.org/wiki/License:BSD_3Clause/
+  ~ for the New BSD License (3-clause license).
+  ~
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>UltraSkyWars</artifactId>
+        <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+        <version>9.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>UltraSkyWars-spigot</artifactId>
+    <packaging>jar</packaging>
+    <version>${parent.version}</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <!-- This is a temporary reference as the Maven Shade plugin
+                that supports Java 17 is not released yet -->
+            <id>maven-snapshots</id>
+            <url>https://repository.apache.org/content/repositories/snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <repositories>
+
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+
+        <repository>
+            <id>simonsators-repo</id>
+            <url>https://simonsator.de/repo/</url>
+        </repository>
+
+        <repository>
+            <id>sonatype-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+
+        <repository>
+            <id>alessiodp-repo</id>
+            <url>https://repo.alessiodp.com/releases/</url>
+        </repository>
+
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+
+        <repository>
+            <id>reposilite-repository-releases</id>
+            <name>Reposilite Repository</name>
+            <url>https://repo.kryptonmc.org/releases</url>
+        </repository>
+
+        <repository>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <id>krypton</id>
+            <url>https://repo.kryptonmc.org/releases</url>
+        </repository>
+
+        <repository>
+            <id>simonsators Repo</id>
+            <url>https://simonsator.de/repo</url>
+        </repository>
+
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
+
+    </repositories>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.bstats</groupId>
+            <artifactId>bstats-bukkit</artifactId>
+            <version>3.0.0</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_8_R3</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_9_R2</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_10_R1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_11_R1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_12_R1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_13_R2</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_14_R1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_1_15_R1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_v1_16_R3</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_v1_17_R1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_v1_18_R2</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>nms_v1_19_R1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>UltraSkyWars-WENew</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>UltraSkyWars-WEOld</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>UltraSkyWars-Setup</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>UltraSkyWars-TNTMadness</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>2.10.9</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.whilein.fawe-legacy</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>888d0e9e</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>core</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>worldedit-bukkit</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>worldedit-core</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.whilein.fawe-legacy</groupId>
+            <artifactId>core</artifactId>
+            <version>888d0e9e</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-core</artifactId>
+            <version>6.1.4-SNAPSHOT</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>worldedit-core</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>bukkit</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>com.sk89q.lib</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>6.1.4-SNAPSHOT</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>worldedit-core</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>bukkit</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>com.sk89q.lib</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alessiodp.parties</groupId>
+            <artifactId>parties-api</artifactId>
+            <version>3.2.6</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.md</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>me.neznamy</groupId>
+            <artifactId>tab-api</artifactId>
+            <version>3.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>net.lymarket.lyapi</groupId>
+            <artifactId>lyapi-spigot</artifactId>
+            <version>1.2.12</version>
+            <scope>compile</scope>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.gmail.filoghost.holographicdisplays</groupId>
+            <artifactId>holographicdisplays-api</artifactId>
+            <version>2.4.9</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.grinderwolf</groupId>
+            <artifactId>slimeworldmanager-api</artifactId>
+            <version>2.2.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.robin</groupId>
+            <artifactId>LeaderHeads</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/dependencies/LeaderHeadsAPI.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>de.simonsator</groupId>
+            <artifactId>Party-and-Friends-MySQL-Edition-Spigot-API</artifactId>
+            <version>1.5.4-RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>de.simonsator</groupId>
+            <artifactId>spigot-party-api-for-party-and-friends</artifactId>
+            <version>1.0.4-RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.black_ixx.playerpoints</groupId>
+            <artifactId>PlayerPoints</artifactId>
+            <version>3.2.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/dependencies/PlayerPoints-3.2.4.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <configuration>
+                    <outputDirectory>target</outputDirectory>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
+                    <!--<outputFile>${project.build.directory}/${project.parent.artifactId}-${project.parent.version}.jar
+                    </outputFile>-->
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>module-info.class</exclude>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                                <exclude>META-INF/**</exclude>
+                                <exclude>dependencies</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+</project>

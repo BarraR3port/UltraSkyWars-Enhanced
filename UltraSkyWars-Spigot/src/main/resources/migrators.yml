@@ -1,0 +1,21 @@
+skywars:
+  enabled: false
+  data: SkyWars_Data
+  mysql:
+    enabled: false
+    server: 127.0.0.1
+    port: 3306
+    db: admin
+    user: admin
+    password: password
+skywarsX:
+  enabled: false
+  table: Skywars
+  useUUID: false
+  mysql:
+    enabled: false
+    server: localhost
+    port: 3306
+    db: database
+    user: root
+    password: root

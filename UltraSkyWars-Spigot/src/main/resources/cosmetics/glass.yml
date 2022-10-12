@@ -1,0 +1,25 @@
+glasses:
+  Defecto:
+    id: 0
+    name: Defecto
+    schematic: glass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GLASS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDefault
+        lore:
+          - §7This is a default glass
+          - §7
+          - <price>
+          - §7
+          - §eRight-Click to preview!
+          - <status>
+    isBuy: true
+    price: 500
+    slot: 10
+    page: 1
+    permission: ultraskywars.glass.Defecto

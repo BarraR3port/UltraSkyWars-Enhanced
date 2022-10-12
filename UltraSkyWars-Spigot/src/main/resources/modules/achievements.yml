@@ -1,0 +1,25 @@
+achievements:
+  wins10:
+    type: WINS
+    amount: 10
+    modes:
+      - "ALL"
+    rewards:
+      - "sw coins add <player> 100"
+  kills10:
+    type: KILLS
+    amount: 10
+    modes:
+      - "ALL"
+    rewards:
+      - "sw coins add <player> 100"
+  elo10:
+    type: ELO
+    amount: 10
+    rewards:
+      - "sw coins add <player> 100"
+  level10:
+    type: LEVEL
+    amount: 10
+    rewards:
+      - "sw coins add <player> 100"

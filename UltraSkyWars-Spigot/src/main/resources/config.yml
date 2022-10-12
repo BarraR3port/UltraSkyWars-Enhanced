@@ -1,0 +1,198 @@
+teamModeChar: "!"
+debugMode: false
+teamOneCage: true
+motdStates: false
+specials:
+  autoFly:
+    enabled: false
+    permission: ultraskywars.autofly
+  disableLevels: false
+  showBowDamage: true
+  disableAllScoreboards: false
+  chestHolograms: true
+  enderPearlsCountdown:
+    enabled: false
+    seconds: 8
+  rankedJoin:
+    enabled: false
+    parties: false
+    levels: 5
+cosmetics:
+  glasses: true
+  killEffect: true
+  balloons: true
+  killSounds: true
+  partings: true
+  taunts: true
+  trails: true
+  winDance: true
+  winEffects: true
+bungee:
+  enabled: false
+  lobby: false
+  game: true
+  gameType: SOLO
+  lobbyServer: Lobby
+  gameServer: SW01
+  gamesToRestart: 10
+chat:
+  games: true
+  spectator: true
+  spectatorGlobal: false
+  mainLobby: true
+  broadcastLevelUp: true
+  broadcastGame: true
+  broadcastRankLevelUp: true
+  broadcastRankLevelDown: true
+soulWellPrice: 10
+disableKitLevels: false
+disableVotesRanked: true
+mainLobbyWorld: LobbyWorld
+savingDataSync: false
+signsRotation: false
+lobbyScoreboard: true
+preLobbySystem: true
+progressBarAmount: 10
+autoLapiz: true
+updatePlayersPlaceholder: 5
+maxCollectHeads: 21
+whitelistedCMD:
+  - /sw leave
+  - /sw forcestart
+modules:
+  challenges: false
+  cubelets: false
+  lobbyprotect: false
+  mobfriends: false
+  parties: false
+  perks: false
+  perworldtab: false
+  eloranks: false
+  signs: false
+  soulwell: false
+  specialitems: false
+addons:
+  AnimatedNames: false
+  TrHologram: false
+  Vault: false
+  PlayerPoints: false
+  Coins: false
+  Holograms: false
+  HolographicDisplays: true
+  NametagEdit: false
+  Parties: false
+  TAB: false
+  PlaceholderAPI: true
+  MVdWPlaceholderAPI: false
+  LeaderHeads: false
+  SlimeWorldManager: false
+  SlimeWorldManager-Loader: file
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: Leonardo
+  username: Spigot
+  password: Plugin
+mongodb:
+  enabled: false
+  host: 127.0.0.1
+  port: 27017
+  database: Leonardo
+  username: Spigot
+  password: Plugin
+redis:
+  enabled: false
+  host: 127.0.0.1
+  port: 6379
+  password: ""
+  ssl: false
+redPanelInLocked: true
+kitLevelsOrder: false
+redPanel:
+  material: STAINED_GLASS_PANE
+  data: 14
+schemaToClearLobby: ClearLobby.schematic
+leaveCMD: false
+mainLobby: null
+topKills: null
+topWins: null
+topDeaths: null
+topElo: null
+items:
+  lobby:
+    enabled: true
+    slot: 2
+    cmd: /sw lobby
+  kits:
+    slot: 0
+  votes:
+    slot: 1
+  team:
+    slot: 2
+  challenges:
+    slot: 7
+  leave:
+    slot: 8
+rewards:
+  soulwell: true
+signs:
+  right: true
+  left: true
+gameDefaults:
+  maxMobFriends: 1
+  timeBorderReduction: 120
+  minBorderReduction: 20
+  maxMultiplier: 5
+  starting: 30
+  pregame: 5
+  winTime: 10
+  maxItemsChest: 15
+  naturalSpawnEggs: false
+  coins:
+    kill: 5
+    win: 20
+    assists: 2
+  xp:
+    kill: 5
+    win: 10
+    assists: 2
+  souls:
+    kill: 1
+    win: 5
+    assists: 0
+materials:
+  challenges: BLAZE_POWDER
+  lobby: DIAMOND
+  team: NETHER_STAR
+  spectate: COMPASS
+  options: REDSTONE_COMPARATOR
+  play: PAPER
+  leave: BED
+  kits: BOW
+  votes: EMPTY_MAP
+  setup: DIAMOND
+  center: BLAZE_ROD
+  island: BLAZE_POWDER
+  soulwell: STAINED_GLASS
+  closeitem: BOOK
+  back: ARROW
+  deselect: BARRIER
+  next: ARROW
+  last: ARROW
+states:
+  waiting: 5
+  starting: 4
+  empty: 0
+win-commands:
+  enabled: false
+  cmds:
+    - "say <player> is a pro!"
+death-commands:
+  enabled: false
+  cmds:
+    - "say <player> is a noob!"
+kill-commands:
+  enabled: false
+  cmds:
+    - "say <player> is a killer!"

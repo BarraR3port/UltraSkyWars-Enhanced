@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+  ~ Copyright (c) 2022.
+  ~
+  ~  This program/library is free software: you can redistribute it and/or modify
+  ~ it under the terms of the New BSD License (3-clause license).
+  ~
+  ~ This program/library is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  ~ FITNESS FOR A PARTICULAR PURPOSE. See the New BSD License (3-clause license)
+  ~ for more details.
+  ~
+  ~ You should have received a copy of the New BSD License (3-clause license)
+  ~ along with this program/library; If not, see http://directory.fsf.org/wiki/License:BSD_3Clause/
+  ~ for the New BSD License (3-clause license).
+  ~
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+    <artifactId>UltraSkyWars</artifactId>
+    <packaging>pom</packaging>
+    <version>9.0.0</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.artifactId>UltraSkyWars</project.artifactId>
+    </properties>
+
+    <repositories>
+        <!--Bungeecord Repo-->
+        <!--Only include if using the Spigot API dependency-->
+        <repository>
+            <id>bungeecord-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+
+        <repository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/groups/4800570/-/packages/maven</url>
+        </repository>
+
+        <repository>
+            <id>codemc-nms</id>
+            <url>https://repo.codemc.io/repository/nms/</url>
+        </repository>
+
+        <repository>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
+        <repository>
+            <id>worldedit</id>
+            <url>https://maven.enginehub.org/repo/</url>
+        </repository>
+
+    </repositories>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-chat</artifactId>
+            <version>1.8-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.10</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>3.4.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.2</version>
+                <configuration>
+                    <goals>pre-integration-test</goals>
+                    <preparationGoals>package</preparationGoals>
+                    <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
+                    <remoteTagging>false</remoteTagging>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <modules>
+        <module>api</module>
+        <module>UltraSkyWars-Spigot</module>
+        <module>UltraSkyWars-WENew</module>
+        <module>UltraSkyWars-WEOld</module>
+        <module>UltraSkyWars-Setup</module>
+        <module>UltraSkyWars-TNTMadness</module>
+        <module>nms_1_8_R3</module>
+        <module>nms_1_9_R2</module>
+        <module>nms_1_10_R1</module>
+        <module>nms_1_11_R1</module>
+        <module>nms_1_12_R1</module>
+        <module>nms_1_13_R2</module>
+        <module>nms_1_14_R1</module>
+        <module>nms_1_15_R1</module>
+        <module>nms_v1_16_R3</module>
+        <module>nms_v1_17_R1</module>
+        <module>nms_v1_18_R2</module>
+        <module>nms_v1_19_R1</module>
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>lymarket</id>
+            <url>https://repo.lydark.org/repository/lymarket/</url>
+        </repository>
+        <snapshotRepository>
+            <id>lymarket</id>
+            <url>https://repo.lydark.org/repository/lymarket/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

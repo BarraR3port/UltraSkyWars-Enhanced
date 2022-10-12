@@ -1,0 +1,11 @@
+joins:
+  Rushers:
+    name: Rusher
+    maps:
+      - Test1
+      - Test2
+  BigMaps:
+    name: BigMaps
+    maps:
+      - Map1
+      - Map2

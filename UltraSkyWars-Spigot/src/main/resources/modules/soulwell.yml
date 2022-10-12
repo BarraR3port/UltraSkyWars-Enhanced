@@ -1,0 +1,223 @@
+buy: "&eClick to buy!"
+noMoney: "&cYou don't have enough coins!"
+buyed: "&eYou've bought <name> &b<souls> &esouls."
+extraBuyed: "&eYou've purchased the Extra Upgrade <name>&e."
+maxBuyed: "&eYou've purchased the Max Upgrade <name>&e."
+angelBuyed: "&eYou've bought the Corruption level <name>&e."
+maxed: "&cYou've reached the maximum in this upgrade."
+collected: "&7<player> &eto collect the head of <death> <rarity>&e."
+unlocked: "&aUNLOCKED"
+date: "yyyy-MM-dd hh:mma"
+raritys:
+  eww: "&8Eww"
+  disgusting: "&7Disgusting"
+  bah: "&fBah"
+  decent: "&eDecent"
+  salty: "&aSalty"
+  tasty: "&3Tasty"
+  succulent: "&dSucculent"
+  candy: "&bCandy"
+  divine: "&6Divine"
+  heavenly: "&5Heavenly"
+heads:
+  stats:
+    nameItem: "&aHead Stats"
+    loreItem: |-
+      &7Total Heads: &a<heads>
+      &7
+      &8Eww: &a<eww>
+      &7Disgusting: &a<disgusting>
+      &fBah: &a<bah>
+      &eDecent: &a<decent>
+      &aSalty: &a<salty>
+      &3Tasty: &a<tasty>
+      &dSucculent: &a<succulent>
+      &bCandy: &a<candy>
+      &6Divine: &a<divine>
+      &5Heavenly: &a<heavenly>
+  head:
+    nameItem: "&7<name>"
+    loreItem: |-
+      &7Kill: &b<date>
+      &7
+      <rarity>
+angelLore: |-
+  &7Make him an offering of &6200000
+  &6coins &7to the angel of Death.
+  &7This will increase your position
+  &7with the Angel of Death and increase
+  &7your personal chance of Corruption.
+  &7Your chance of Personal Corruption
+  &7increases the likelihood of a
+  &7game becoming &5Corrupted&7!
+  &7
+  &7When game is &5Corrupted&7, kill a
+  &7players drop &5Heads &7and not
+  &bSouls&7.
+  &7
+  &7Probability of Corruption: &8<now>% <arrow> &a<new>%
+  &7
+  &eClick to open!
+angelofdeath:
+  level1:
+    level: 1
+    price: 200000
+    probability: 1
+    name: "&5Angel of Death I"
+    lore: |-
+      <desc>
+  level2:
+    level: 2
+    price: 200000
+    probability: 2
+    name: "&5Angel of Death II"
+    lore: |-
+      <desc>
+  level3:
+    level: 3
+    price: 200000
+    probability: 3
+    name: "&5Angel of Death III"
+    lore: |-
+      <desc>
+  level4:
+    level: 4
+    price: 200000
+    probability: 4
+    name: "&5Angel of Death IV"
+    lore: |-
+      <desc>
+  level5:
+    level: 5
+    price: 200000
+    probability: 5
+    name: "&5Angel of Death V"
+    lore: |-
+      <desc>
+upgrades:
+  extra:
+    level1:
+      level: 1
+      material: PAPER
+      data: 0
+      amount: 1
+      price: 2500
+      name: "&aXezbeth Luck I"
+      lore: |-
+        &7Get &c<amount> &7souls extra in
+        &7win.
+        &7
+        &7Price: &6<price>
+        <status>
+    level2:
+      level: 2
+      material: PAPER
+      data: 0
+      amount: 2
+      price: 5000
+      name: "&aXezbeth Luck II"
+      lore: |-
+        &7Get &c<amount> &7souls extra in
+        &7win.
+        &7
+        &7Price: &6<price>
+        <status>
+    level3:
+      level: 3
+      material: PAPER
+      data: 0
+      amount: 3
+      price: 7500
+      name: "&aXezbeth Luck III"
+      lore: |-
+        &7Get &c<amount> &7souls extra in
+        &7win.
+        &7
+        &7Price: &6<price>
+        <status>
+  max:
+    season1:
+      level: 1
+      material: GHAST_TEAR
+      data: 0
+      amount: 130
+      price: 50000
+      name: "&aHarvesting Season I"
+      lore: |-
+        &7Increase the maximum number of
+        &7Souls you can store to &c<amount>&7.
+        &7
+        &7Price: &6<price>
+        <status>
+    season2:
+      level: 2
+      material: GHAST_TEAR
+      data: 0
+      amount: 160
+      price: 100000
+      name: "&aHarvesting Season II"
+      lore: |-
+        &7Increase the maximum number of
+        &7Souls you can store to &c<amount>&7.
+        &7
+        &7Price: &6<price>
+        <status>
+    season3:
+      level: 3
+      material: GHAST_TEAR
+      data: 0
+      amount: 190
+      price: 150000
+      name: "&aHarvesting Season III"
+      lore: |-
+        &7Increase the maximum number of
+        &7Souls you can store to &c<amount>&7.
+        &7
+        &7Price: &6<price>
+        <status>
+shop:
+  warlock:
+    material: PAPER
+    data: 0
+    amount: 5
+    slot: 11
+    price: 500
+    give: 5
+    name: "&aHire: Warlock"
+    lore: |-
+      &7Hire Warlock to fight
+      &7and collect &b<souls> Souls
+      &7for you.
+      &7
+      &7Price: &6<price>
+      <status>
+  nigromante:
+    material: PAPER
+    data: 0
+    amount: 10
+    slot: 13
+    price: 1000
+    give: 10
+    name: "&aHire: Nigromante"
+    lore: |-
+      &7Hire Nigromante to fight
+      &7and collect &b<souls> Souls
+      &7for you.
+      &7
+      &7Price: &6<price>
+      <status>
+  deathgod:
+    material: PAPER
+    data: 0
+    amount: 50
+    slot: 15
+    price: 4500
+    give: 50
+    name: "&aHire: Death God"
+    lore: |-
+      &7Hire Death God to fight
+      &7and collect &b<souls> Souls
+      &7for you.
+      &7
+      &7Price: &6<price>
+      <status>

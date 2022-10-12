@@ -1,0 +1,215 @@
+windances:
+  default:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BARRIER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aNinguna
+        lore:
+          - '§7You do not have any Victory Dance'
+    type: none
+    name: Default
+    price: 0
+    isBuy: false
+    slot: 10
+    permission: ultraskywars.windances.fireworks
+    page: 1
+  fireworks:
+    id: 1
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aFireworks Festival
+        lore:
+          - '§eDescription:'
+          - §7Fireworks, celebrate
+          - §7your victory as it should be ;D
+          - §7
+          - <status>
+    type: fireworks
+    name: Fireworks
+    price: 0
+    isBuy: false
+    slot: 11
+    page: 1
+    permission: ultraskywars.windances.fireworks
+  thunders:
+    id: 2
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aThor Fury
+        lore:
+          - '§eDescription:'
+          - §7Create a Thor Mint :v hahaj
+          - §7joke :V
+          - §7
+          - <status>
+    type: thunders
+    name: Thunders
+    price: 0
+    isBuy: false
+    slot: 12
+    page: 1
+    permission: ultraskywars.windances.thunder
+  explode:
+    id: 3
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aExplosive Farewell
+        lore:
+          - '§eDescription:'
+          - §7Exploit all enemy islands
+          - §7shows the male you are.
+          - §7
+          - <status>
+    type: explode
+    name: Explode
+    price: 0
+    isBuy: false
+    slot: 13
+    page: 1
+    permission: ultraskywars.windances.explode
+  daynight:
+    id: 4
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: WATCH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDay and Night
+        lore:
+          - '§eDescription:'
+          - §7Confuse your enemies with
+          - §7the hour of his victory.
+          - §7
+          - <status>
+    type: daynight
+    name: Day and Night
+    price: 0
+    isBuy: false
+    slot: 14
+    page: 1
+    permission: ultraskywars.windances.daynight
+  anvilland:
+    id: 5
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ANVIL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aAnvil Rain
+        lore:
+          - '§eDescription:'
+          - §7Appear anvils everywhere
+          - §7at win.
+          - §7
+          - <status>
+    type: anvilland
+    name: AnvilLand
+    price: 0
+    isBuy: false
+    slot: 15
+    page: 1
+    permission: ultraskywars.windances.anvilland
+  icewalker:
+    id: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ICE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aThe Frozen Elsa
+        lore:
+          - '§eDescription:'
+          - §7I am free, I am free :V
+          - §7well sing that when you win.
+          - §7
+          - <status>
+    type: icewalker
+    name: IceWalker
+    price: 0
+    isBuy: false
+    slot: 16
+    page: 1
+    permission: ultraskywars.windances.icewalker
+  meteors:
+    id: 7
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREBALL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aMeteors
+        lore:
+          - '§eDescription:'
+          - §7Summon a meteor shower on the map.
+          - §7
+          - <status>
+    type: meteors
+    name: Meteors
+    price: 0
+    isBuy: false
+    slot: 19
+    page: 1
+    permission: ultraskywars.windances.meteors
+  pigland:
+    id: 8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: PORK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aPig Land
+        lore:
+          - '§eDescription:'
+          - §7Summon a shower of pigs.
+          - §7
+          - <status>
+    type: pigland
+    name: Pig Land
+    price: 0
+    isBuy: false
+    slot: 20
+    page: 1
+    permission: ultraskywars.windances.pigland
+  wolfs:
+    id: 9
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aThe Frozen Elsa
+        lore:
+          - '§eDescription:'
+          - §7A pack of wolves that will
+          - §7be your friends.
+          - §7
+          - <status>
+    type: wolfs
+    name: Wolfs
+    price: 0
+    isBuy: false
+    slot: 21
+    page: 1
+    permission: ultraskywars.windances.wolfs

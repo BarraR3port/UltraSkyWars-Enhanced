@@ -1,0 +1,50 @@
+challenges:
+  UHC:
+    enabled: true
+    slot:
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>
+  NO_CHEST:
+    enabled: true
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>
+  ARCHERY:
+    enabled: true
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>
+  PAPER:
+    enabled: true
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>
+  HEARTS:
+    enabled: true
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>
+  WARRIOR:
+    enabled: true
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>
+  NO_BLOCKS:
+    enabled: true
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>
+  NOOB:
+    enabled: true
+    onWin:
+      enabled: true
+      commands:
+        - /say Hola <player>

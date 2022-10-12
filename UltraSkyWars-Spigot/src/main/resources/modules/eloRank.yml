@@ -1,0 +1,226 @@
+defaultRank: "classify"
+ranks:
+  classify:
+    order: 0
+    min: 0
+    max: 100
+    color: "&8"
+    prefix: "Classify"
+    short: "C"
+  bronzeI:
+    order: 1
+    min: 100
+    max: 200
+    color: "&6"
+    prefix: "Bronze I"
+    short: "B-I"
+  bronzeII:
+    order: 2
+    min: 200
+    max: 300
+    color: "&6"
+    prefix: "Bronze II"
+    short: "B-II"
+  bronzeIII:
+    order: 3
+    min: 300
+    max: 400
+    color: "&6"
+    prefix: "Bronze III"
+    short: "B-III"
+  bronzeIV:
+    order: 4
+    min: 400
+    max: 500
+    color: "&6"
+    prefix: "Bronze IV"
+    short: "B-IV"
+  bronzeV:
+    order: 5
+    min: 500
+    max: 750
+    color: "&6"
+    prefix: "Bronze V"
+    short: "B-V"
+  silverI:
+    order: 6
+    min: 750
+    max: 1000
+    color: "&7"
+    prefix: "Silver I"
+    short: "P-I"
+  silverII:
+    order: 7
+    min: 1000
+    max: 1250
+    color: "&7"
+    prefix: "Silver II"
+    short: "P-II"
+  silverIII:
+    order: 8
+    min: 1250
+    max: 1500
+    color: "&7"
+    prefix: "Silver III"
+    short: "P-III"
+  silverIV:
+    order: 9
+    min: 1500
+    max: 1750
+    color: "&7"
+    prefix: "Silver IV"
+    short: "P-IV"
+  silverV:
+    order: 10
+    min: 1750
+    max: 2000
+    color: "&7"
+    prefix: "Silver V"
+    short: "P-V"
+  goldI:
+    order: 11
+    min: 2000
+    max: 2500
+    color: "&e"
+    prefix: "Gold I"
+    short: "O-I"
+  goldII:
+    order: 12
+    min: 2500
+    max: 3000
+    color: "&e"
+    prefix: "Gold II"
+    short: "O-II"
+  goldIII:
+    order: 13
+    min: 3000
+    max: 3500
+    color: "&e"
+    prefix: "Gold III"
+    short: "O-III"
+  goldIV:
+    order: 14
+    min: 3500
+    max: 4000
+    color: "&e"
+    prefix: "Gold IV"
+    short: "O-IV"
+  goldV:
+    order: 15
+    min: 4000
+    max: 5000
+    color: "&e"
+    prefix: "Gold V"
+    short: "O-V"
+  platinumI:
+    order: 16
+    min: 5000
+    max: 5500
+    color: "&a"
+    prefix: "Platinum I"
+    short: "P-I"
+  platinumII:
+    order: 17
+    min: 5500
+    max: 6000
+    color: "&a"
+    prefix: "Platinum II"
+    short: "P-II"
+  platinumIII:
+    order: 18
+    min: 6000
+    max: 6500
+    color: "&a"
+    prefix: "Platinum III"
+    short: "P-III"
+  platinumIV:
+    order: 19
+    min: 6500
+    max: 7000
+    color: "&a"
+    prefix: "Platinum IV"
+    short: "P-IV"
+  platinumV:
+    order: 20
+    min: 7000
+    max: 7500
+    color: "&a"
+    prefix: "Platinum V"
+    short: "P-V"
+  diamondI:
+    order: 21
+    min: 7500
+    max: 8000
+    color: "&b"
+    prefix: "Diamond I"
+    short: "D-I"
+  diamondII:
+    order: 22
+    min: 8000
+    max: 8500
+    color: "&b"
+    prefix: "Diamond II"
+    short: "D-II"
+  diamondIII:
+    order: 23
+    min: 8500
+    max: 9000
+    color: "&b"
+    prefix: "Diamond III"
+    short: "D-III"
+  diamondIV:
+    order: 24
+    min: 9000
+    max: 9500
+    color: "&b"
+    prefix: "Diamond IV"
+    short: "D-IV"
+  diamondV:
+    order: 25
+    min: 9500
+    max: 10000
+    color: "&b"
+    prefix: "Diamond V"
+    short: "D-V"
+  campeonI:
+    order: 26
+    min: 10000
+    max: 10500
+    color: "&d"
+    prefix: "Champion I"
+    short: "C-I"
+  campeonII:
+    order: 27
+    min: 10500
+    max: 11000
+    color: "&d"
+    prefix: "Champion II"
+    short: "C-II"
+  campeonIII:
+    order: 28
+    min: 11000
+    max: 11500
+    color: "&d"
+    prefix: "Champion III"
+    short: "C-III"
+  campeonIV:
+    order: 29
+    min: 11500
+    max: 12000
+    color: "&d"
+    prefix: "Champion IV"
+    short: "C-IV"
+  campeonV:
+    order: 30
+    min: 12000
+    max: 12500
+    color: "&d"
+    prefix: "Champion V"
+    short: "C-V"
+  grancampeonV:
+    order: 31
+    min: 12500
+    max: 15000
+    color: "&5"
+    prefix: "Gran Champion"
+    short: "GC"

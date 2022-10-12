@@ -1,0 +1,33 @@
+name: UltraSkyWars
+main: io.github.Leonardo0013YT.UltraSkyWars.UltraSkyWars
+version: 9.0.0
+authors: [ Leonardo0013YT, BarraR3port ]
+load: POSTWORLD
+softdepend:
+  - AnimatedNames
+  - WorldEdit
+  - FastAsyncWorldEdit
+  - PlaceholderAPI
+  - PlayerPoints
+  - Vault
+  - Coins
+  - Holograms
+  - HolographicDisplays
+  - Parties
+  - TAB
+  - NametagEdit
+  - PartyAndFriends
+  - MVdWPlaceholderAPI
+  - LeaderHeads
+  - TrHologram
+commands:
+  sw:
+    aliases: [ skywars, swars, skyw ]
+  swp:
+    aliases: [ swparty ]
+  party:
+    aliases: [ p ]
+  swi:
+    aliases: [ switems ]
+  leave:
+    aliases: [ quit ]

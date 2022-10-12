@@ -1,0 +1,76 @@
+kits:
+  Prueba:
+    id: 0
+    name: Prueba
+    slot: 10
+    page: 1
+    permission: ultraskywars.kit.Prueba
+    levels:
+      '1':
+        level: 1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aTest
+            lore:
+              - '§eDescription:'
+              - §7Kit test.
+              - §7
+              - <price>
+              - §7
+              - <level>
+              - §7
+              - <status>
+        price: 100
+        permission: ultraskywars.kit.Prueba.1
+        isBuy: true
+        armor:
+          - ==: org.bukkit.inventory.ItemStack
+            type: DIAMOND_BOOTS
+          - ==: org.bukkit.inventory.ItemStack
+            type: DIAMOND_LEGGINGS
+          - ==: org.bukkit.inventory.ItemStack
+            type: DIAMOND_CHESTPLATE
+          - ==: org.bukkit.inventory.ItemStack
+            type: DIAMOND_HELMET
+        inv:
+          - ==: org.bukkit.inventory.ItemStack
+            type: DIAMOND_SWORD
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null

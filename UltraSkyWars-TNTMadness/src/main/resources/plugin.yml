@@ -1,0 +1,8 @@
+name: UltraSkyWarsTNTM
+author: Leonardo0013YT
+version: 1.0.0
+main: io.github.Leonardo0013YT.UltraSkyWars.TNTMadness.UltraSkyWarsTNTM
+depend:
+  - UltraSkyWars
+commands:
+  uswt:

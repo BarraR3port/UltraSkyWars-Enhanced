@@ -1,0 +1,147 @@
+partyCommand: false
+config:
+  defaultMax: 3
+noYourParty: "&cThis player is not at your party."
+anyParty: "&cThis player is not at any party."
+onlyLeader: "&cOnly the leader can eliminate the party."
+noInParty: "&cYou're not in any party."
+denyParty: "&cYou have denied the party request."
+disbaned: "&cThe party has been eliminated."
+disbandParty: "&cThe party you're trying to get into is deleted."
+noInvited: "&cYou haven't been invited to any party."
+noInviteYou: "&cYou can't invite yourself."
+noOnline: "&cThis player is not online."
+alreadyLeader: "&cYou're already the leader of the party."
+noKickLeader: "&cYou can't get out of your own party."
+noIsLeader: "&cYou're not the party leader."
+isPartyMember: "&cThis player already belongs to a party."
+alreadyParty: "&cYou're already in a party."
+partyPrivate: "&cThis party is private."
+joiningPartyChat: "&aJoining to party chat..."
+leavingPartyChat: "&aLeaving from party chat..."
+partyChat: "&9P-Chat &e<player> &8> &7<msg>"
+menus:
+  members:
+    title: "Party Menu"
+    member:
+      nameItem: "&7<name>"
+      loreItem: |-
+        &7
+        &cClick derecho para expulsar!
+    close:
+      nameItem: "&cClose"
+      loreItem: |-
+        &7Close this
+        &7menu.
+    delete:
+      nameItem: "&cDelete Party"
+      loreItem: |-
+        &7Delete this
+        &7party.
+  parties:
+    title: "Parties"
+    party:
+      status:
+        join: "&aClick to join!"
+        privacy: "&cThis party is private!"
+        full: "&5Party full"
+      member: "&7 - &b<name>"
+      nameItem: "&7<leader>"
+      loreItem: |-
+        &7
+        &eLeader: &b<leader>
+        &eMax Size: &b<size>
+        &eMembers:
+        <members>
+        &7
+        <status>
+    close:
+      nameItem: "&cClose"
+      loreItem: |-
+        &7Close this
+        &7menu.
+  main:
+    title: "Party"
+    create:
+      nameItem: "&aCreate"
+      loreItem: |-
+        &7Create a new party
+        &7for you.
+    join:
+      nameItem: "&cSearch"
+      loreItem: |-
+        &7Search for a Party in
+        &7the parties list.
+    close:
+      nameItem: "&cClose"
+      loreItem: |-
+        &7Close this
+        &7menu.
+help:
+  - "&6[] &fOptional &7- &6<> &fNeeded"
+  - "&7&m----------------------------"
+  - "&e/party help &c- &aShow help of commands."
+  - "&e/party setleader <name> &c- &aEstablish a party leader."
+  - "&e/party menu &c- &aOpen party main menu."
+  - "&e/party privacy &c- &aChange the privacy of the party."
+  - "&e/party [invite] <player> &c- &aCreate a new party."
+  - "&e/party kick <player> &c- &aKick player from your party."
+  - "&e/party list &c- &aShow list of players."
+  - "&e/party chat &c- &aEnable or disable party chat."
+  - "&e/party leave &c- &aLeave from the party."
+  - "&e/party accept &c- &aAccept the party invite."
+  - "&e/party deny &c- &aDeny the party invite."
+  - "&e/party disband &c- &aDelete your party."
+  - "&7&m----------------------------"
+list:
+  header: |-
+    &aPlayers in Party.
+    &7
+    &cLeader: &a<leader>
+    &7
+    <players>
+  player: "&e - &7<name>"
+privateParty: "&cPrivate"
+publicParty: "&bPublic"
+accept: "       &a&l[ACCEPT]"
+deny: "       &c&l[DENY]"
+hoverAccept: "&fClick to accept!"
+hoverDeny: "&fClick to deny!"
+newLeader: |-
+  &7&m----------------------------
+  &e<player> &ahe's the new party leader.
+  &7&m----------------------------
+privacy: |-
+  &7&m----------------------------
+  &aNow the privacy of your party is <privacy>&a.
+  &7&m----------------------------
+invited: |-
+  &7&m----------------------------
+  &e<player> &ainvited to a party, use
+  &7the /party accept command to join.
+  <buttons>
+  &7&m----------------------------
+inviter: |-
+  &7&m----------------------------
+  &aHave invited &e<player> &ato your party.
+  &7&m----------------------------
+inviteMembers: |-
+  &7&m----------------------------
+  &e<player> &ainvited to the party.
+  &7&m----------------------------
+joined: |-
+  &7&m----------------------------
+  &e<player> &ajoined the party.
+  &7&m----------------------------
+denied: |-
+  &7&m----------------------------
+  &e<player> &cdenied the party.
+  &7&m----------------------------
+kick: |-
+  &7&m----------------------------
+  &e<player> &ckicked from the party.
+  &7&m----------------------------
+leave: |-
+  &7&m----------------------------
+  &e<player> &cleave from the party.
+  &7&m----------------------------

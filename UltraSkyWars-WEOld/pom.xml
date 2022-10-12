@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+  ~ Copyright (c) 2022.
+  ~
+  ~  This program/library is free software: you can redistribute it and/or modify
+  ~ it under the terms of the New BSD License (3-clause license).
+  ~
+  ~ This program/library is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  ~ FITNESS FOR A PARTICULAR PURPOSE. See the New BSD License (3-clause license)
+  ~ for more details.
+  ~
+  ~ You should have received a copy of the New BSD License (3-clause license)
+  ~ along with this program/library; If not, see http://directory.fsf.org/wiki/License:BSD_3Clause/
+  ~ for the New BSD License (3-clause license).
+  ~
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>UltraSkyWars</artifactId>
+        <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+        <version>9.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>UltraSkyWars-WEOld</artifactId>
+    <packaging>jar</packaging>
+    <version>${parent.version}</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <!-- This is a temporary reference as the Maven Shade plugin
+                that supports Java 17 is not released yet -->
+            <id>maven-snapshots</id>
+            <url>https://repository.apache.org/content/repositories/snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <repositories>
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
+        <repository>
+            <id>codemc-nms</id>
+            <url>https://repo.codemc.io/repository/nms/</url>
+        </repository>
+        <repository>
+            <id>spigotmc-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
+            <artifactId>api</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.whilein.fawe-legacy</groupId>
+            <artifactId>core</artifactId>
+            <version>888d0e9e</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-core</artifactId>
+            <version>6.1.4-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>6.1.4-SNAPSHOT</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>worldedit-core</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>bukkit</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>com.sk89q.lib</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <build>
+    </build>
+
+</project>

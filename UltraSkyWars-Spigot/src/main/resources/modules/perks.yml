@@ -1,0 +1,491 @@
+price:
+  nextPrice: "&aPrecio: &6<price>"
+  unlocked: "&aUNLOCKED!"
+states:
+  upgrade: "&eLeft Click to Upgrade!"
+  maxed: "&eThis perk is in max."
+  noHas: "&cYou dont have this perk!"
+status:
+  offState: "&eClick to toggle: &cOFF&e!"
+  onState: "&eClick to toggle: &aON&e!"
+perks:
+  fallreduction:
+    id: 0
+    name: "&aFall Reduction"
+    lore: |-
+      &7Gain <amount>% fall damage reduction
+      &7by a percentage of <probability>%.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: DIAMOND_BOOTS
+      data: 0
+      amount: 1
+    slot: 10
+    levels:
+      level1:
+        level: 1
+        price: 500
+        percent: 10
+        probability: 100
+      level2:
+        level: 2
+        percent: 15
+        price: 500
+        probability: 100
+      level3:
+        level: 3
+        percent: 20
+        price: 500
+        probability: 100
+      level4:
+        level: 4
+        percent: 25
+        price: 500
+        probability: 100
+  firedamagereduction:
+    id: 1
+    name: "&aFire Damage Reduction"
+    lore: |-
+      &7Gain <amount>% fire damage reduction
+      &7by a percentage of <probability>%.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: FLINT_AND_STEEL
+      data: 0
+      amount: 1
+    slot: 11
+    levels:
+      level1:
+        level: 1
+        percent: 5
+        price: 500
+        probability: 100
+      level2:
+        level: 2
+        percent: 10
+        price: 500
+        probability: 100
+      level3:
+        level: 3
+        percent: 15
+        price: 500
+        probability: 100
+      level4:
+        level: 4
+        percent: 20
+        price: 500
+        probability: 100
+  shotdamagereduction:
+    id: 2
+    name: "&aShot Damage Reduction"
+    lore: |-
+      &7Gain <amount>% shot damage reduction
+      &7by a percentage of <probability>%.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: BOW
+      data: 0
+      amount: 1
+    slot: 12
+    levels:
+      level1:
+        level: 1
+        percent: 5
+        price: 500
+        probability: 100
+      level2:
+        level: 2
+        percent: 10
+        price: 500
+        probability: 100
+      level3:
+        level: 3
+        percent: 15
+        price: 500
+        probability: 100
+      level4:
+        level: 4
+        percent: 20
+        price: 500
+        probability: 100
+  anno_o_mite:
+    id: 3
+    name: "&aAnno-o-Mite"
+    lore: |-
+      &7Gain <probability>% chance to appear a
+      &7lepisma when an arrow hits your enemy.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: MONSTER_EGG
+      data: 60
+      amount: 1
+    slot: 13
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 500
+        probability: 5
+      level2:
+        level: 2
+        percent: 0
+        price: 500
+        probability: 10
+      level3:
+        level: 3
+        percent: 0
+        price: 500
+        probability: 15
+      level4:
+        level: 4
+        percent: 0
+        price: 500
+        probability: 20
+  arrowrecovery:
+    id: 4
+    name: "&aArrow Recovery"
+    lore: |-
+      &7Gain <probability>% chance to retrieve
+      &7your arrow when hitting an enemy.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: ARROW
+      data: 0
+      amount: 1
+    slot: 14
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 500
+        probability: 5
+      level2:
+        level: 2
+        percent: 0
+        price: 500
+        probability: 10
+      level3:
+        level: 3
+        percent: 0
+        price: 500
+        probability: 15
+      level4:
+        level: 4
+        percent: 0
+        price: 500
+        probability: 20
+  blazingarrows:
+    id: 5
+    name: "&aBlazing Arrows"
+    lore: |-
+      &7Gain <probability>% probability
+      &7of throwing a fire arrow.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: BLAZE_POWDER
+      data: 0
+      amount: 1
+    slot: 15
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 500
+        probability: 1
+      level2:
+        level: 2
+        percent: 0
+        price: 500
+        probability: 2
+      level3:
+        level: 3
+        percent: 0
+        price: 500
+        probability: 3
+      level4:
+        level: 4
+        percent: 0
+        price: 500
+        probability: 4
+  bulldozer:
+    id: 6
+    name: "&aBulldozer"
+    lore: |-
+      &7When you kill an enemy you
+      &7get 2 seconds of Force I
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: ANVIL
+      data: 0
+      amount: 1
+    slot: 16
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 500
+        probability: 100
+  endermastery:
+    id: 7
+    name: "&aEnderMastery"
+    lore: |-
+      &7Reduces enderpearls
+      &7damage by 40%
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: ENDER_PEARL
+      data: 0
+      amount: 1
+    slot: 19
+    levels:
+      level1:
+        level: 1
+        percent: 40
+        price: 500
+        probability: 100
+      level2:
+        level: 2
+        percent: 45
+        price: 500
+        probability: 100
+      level3:
+        level: 3
+        percent: 50
+        price: 500
+        probability: 100
+  juggernaut:
+    id: 8
+    name: "&aJuggernaut"
+    lore: |-
+      &7Enemy kills give you regen
+      &7I for 4 seconds.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: DIAMOND_HELMET
+      data: 0
+      amount: 1
+    slot: 20
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 500
+        probability: 100
+  knowledge:
+    id: 9
+    name: "&aKnowledge"
+    lore: |-
+      &7Every kill you gain 2 EXP
+      &7Level.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: EXP_BOTTLE
+      data: 0
+      amount: 1
+    slot: 21
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 500
+        probability: 100
+  miningexpertise:
+    id: 10
+    name: "&aMining Expertise"
+    lore: |-
+      &720% Chance to get 1 extra
+      &7ore per block mined.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: STONE_PICKAXE
+      data: 0
+      amount: 1
+    slot: 22
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 500
+        probability: 20
+      level2:
+        level: 2
+        percent: 1
+        price: 500
+        probability: 30
+      level3:
+        level: 3
+        percent: 1
+        price: 500
+        probability: 40
+      level4:
+        level: 4
+        percent: 1
+        price: 500
+        probability: 50
+  speedstart:
+    id: 11
+    name: "&aSpeed Boost I"
+    lore: |-
+      &7Get haste I for 5s whe the
+      &7game starts.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: FEATHER
+      data: 0
+      amount: 1
+    slot: 23
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 500
+        probability: 100
+      level2:
+        level: 2
+        percent: 2
+        price: 500
+        probability: 100
+  resistencestart:
+    id: 12
+    name: "&aResistance Boost"
+    lore: |-
+      &7Gain 10s of resistance I
+      &7when the game starts.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: IRON_CHESTPLATE
+      data: 0
+      amount: 1
+    slot: 24
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 500
+        probability: 100
+  nourishment:
+    id: 13
+    name: "&aNourishment"
+    lore: |-
+      &7Every kill gives you full
+      &7hunger and saturation.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: BREAD
+      data: 0
+      amount: 1
+    slot: 25
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 500
+        probability: 20
+      level2:
+        level: 2
+        percent: 1
+        price: 500
+        probability: 25
+      level3:
+        level: 3
+        percent: 1
+        price: 500
+        probability: 30
+      level4:
+        level: 4
+        percent: 1
+        price: 500
+        probability: 35
+  savior:
+    id: 14
+    name: "&aSavior"
+    lore: |-
+      &7Enemy kills give you
+      &7absorption I for 4 seconds.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: APPLE
+      data: 0
+      amount: 1
+    slot: 28
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 500
+        probability: 20
+      level2:
+        level: 2
+        percent: 1
+        price: 500
+        probability: 25
+      level3:
+        level: 3
+        percent: 1
+        price: 500
+        probability: 30
+      level4:
+        level: 4
+        percent: 1
+        price: 500
+        probability: 35

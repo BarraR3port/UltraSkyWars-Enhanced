@@ -1,0 +1,285 @@
+killeffects:
+  default:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BARRIER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aNone
+        lore:
+          - §7You do not have any KillEffect.
+    type: none
+    name: Default
+    price: 0
+    isBuy: false
+    slot: 10
+    page: 1
+    permission: ultraskywars.killeffect.default
+  firework:
+    id: 1
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        display-name: §aFirework
+        lore:
+          - '§eDescription:'
+          - §7Killing a firework
+          - §7explodes instantly.
+          - §7
+          - <status>
+    type: firework
+    name: Fireworks
+    price: 0
+    isBuy: false
+    slot: 11
+    page: 1
+    permission: ultraskywars.killeffect.fireworks
+  thunder:
+    id: 2
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aThunder
+        lore:
+          - '§eDescription:'
+          - §7When to kill a person
+          - §7thunder falls.
+          - §7
+          - <status>
+    type: thunder
+    name: Thunder
+    price: 0
+    isBuy: false
+    slot: 12
+    page: 1
+    permission: ultraskywars.killeffect.thunder
+  explode:
+    id: 3
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: TNT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aTNT
+        lore:
+          - '§eDescription:'
+          - §7It has an effect of
+          - §7explosion when killing.
+          - §7
+          - <status>
+    type: explode
+    name: Explode
+    price: 0
+    isBuy: false
+    slot: 13
+    page: 1
+    permission: ultraskywars.killeffect.explode
+  squid:
+    id: 4
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: MONSTER_EGG
+      damage: 94
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aSquid
+        lore:
+          - '§eDescription:'
+          - §7A flying squid appears
+          - §7striking.
+          - §7
+          - <status>
+    type: squid
+    name: Squid
+    price: 0
+    isBuy: false
+    slot: 14
+    page: 1
+    permission: ultraskywars.killeffect.squid
+  blood:
+    id: 5
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aBloody Death
+        lore:
+          - '§eDescription:'
+          - §7Particles explode
+          - §7blood when killing.
+          - §7
+          - <status>
+    type: blood
+    name: Blood
+    price: 0
+    isBuy: false
+    slot: 15
+    page: 1
+    permission: ultraskywars.killeffect.blood
+  diamond:
+    id: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aMillionaire Explosion
+        lore:
+          - '§eDescription:'
+          - §7Expel diamonds that disappear
+          - §7after a while.
+          - §7
+          - <status>
+    type: diamondexplode
+    name: Diamond Explode
+    price: 0
+    isBuy: false
+    slot: 16
+    page: 1
+    permission: ultraskywars.killeffect.diamond
+  flower:
+    id: 7
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: YELLOW_FLOWER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aSpring
+        lore:
+          - '§eDescription:'
+          - §7Flowers explode that disappear
+          - §7in autumn.
+          - §7
+          - <status>
+    type: flower
+    name: Flower
+    price: 0
+    isBuy: false
+    slot: 19
+    page: 1
+    permission: ultraskywars.killeffect.flower
+  head:
+    id: 8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aHead
+        lore:
+          - '§eDescription:'
+          - §7When the player is killed,
+          - §7his head comes up.
+          - §7
+          - <status>
+    type: head
+    name: Head
+    price: 0
+    isBuy: false
+    slot: 20
+    page: 1
+    permission: ultraskywars.killeffect.head
+  snow:
+    id: 9
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SNOW_BLOCK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aSnow Explosion
+        lore:
+          - '§eDescription:'
+          - §7It blows up the snow and when it
+          - §7falls it changes blocks.
+          - §7
+          - <status>
+    type: snow
+    name: Snow
+    price: 0
+    isBuy: false
+    slot: 21
+    page: 1
+    permission: ultraskywars.killeffect.snow
+  cookie:
+    id: 10
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: COOKIE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aCookie Fountain
+        lore:
+          - '§eDescription:'
+          - §7For a while cookies will appear
+          - §7on the enemy's death.
+          - §7
+          - <status>
+    type: cookie
+    name: Cookie
+    price: 0
+    isBuy: false
+    slot: 22
+    page: 1
+    permission: ultraskywars.killeffect.cookie
+  gift:
+    id: 11
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_INGOT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aGift Explosion
+        lore:
+          - '§eDescription:'
+          - §7When killing an enemy, gifts will
+          - §7appear in the form of an explosion.
+          - §7
+          - <status>
+    type: gift
+    name: Gift
+    price: 0
+    isBuy: false
+    slot: 23
+    page: 1
+    permission: ultraskywars.killeffect.gift
+  heart:
+    id: 12
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: APPLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aHeart Explosion
+        lore:
+          - '§eDescription:'
+          - §7Particles will appear where
+          - §7the enemy dies.
+          - §7
+          - <status>
+    type: heart
+    name: Heart
+    price: 0
+    isBuy: false
+    slot: 24
+    page: 1
+    permission: ultraskywars.killeffect.heart
