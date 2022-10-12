@@ -1,6 +1,6 @@
 name: UltraSkyWars
 main: io.github.Leonardo0013YT.UltraSkyWars.UltraSkyWars
-version: 9.0.0
+version: 9.1.0
 authors: [ Leonardo0013YT, BarraR3port ]
 load: POSTWORLD
 softdepend:
