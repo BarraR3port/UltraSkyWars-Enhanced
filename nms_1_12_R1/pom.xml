@@ -29,7 +29,7 @@
     <parent>
         <artifactId>UltraSkyWars</artifactId>
         <groupId>io.github.Leonardo0013YT.UltraSkyWars</groupId>
-        <version>9.1.0</version>
+        <version>9.1.1</version>
     </parent>
 
     <dependencies>

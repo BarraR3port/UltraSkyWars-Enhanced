@@ -41,7 +41,7 @@ import java.util.UUID;
 
 public class MySQLDatabase implements Database {
     
-    private final static String SAVE = "UPDATE UltraSkyWarsApi SET Data=?, Kills=?, Wins=?, Deaths=?, Coins=?, Elo=? WHERE UUID=?";
+    private final static String SAVE = "UPDATE UltraSkyWars SET Data=?, Kills=?, Wins=?, Deaths=?, Coins=?, Elo=? WHERE UUID=?";
     private final static HashMap<UUID, SWPlayer> players = new HashMap<>();
     private static boolean enabled;
     private final UltraSkyWarsApi plugin;
@@ -82,7 +82,7 @@ public class MySQLDatabase implements Database {
             config.addDataSourceProperty("useUnicode", "true");
             config.addDataSourceProperty("useSSL", false);
             config.addDataSourceProperty("tcpKeepAlive", true);
-            config.setPoolName("UltraSkyWarsApi " + UUID.randomUUID());
+            config.setPoolName("UltraSkyWars " + UUID.randomUUID());
             config.setMaxLifetime(Long.MAX_VALUE);
             config.setMinimumIdle(0);
             config.setIdleTimeout(30000L);
@@ -164,12 +164,12 @@ public class MySQLDatabase implements Database {
     
     @Override
     public int getRanking(UUID uuid){
-        // SELECT UUID, Elo, (SELECT COUNT(*)+1 FROM UltraSkyWarsApi WHERE Elo>x.Elo) AS Ranking FROM UltraSkyWarsApi x WHERE x.UUID = '3f1f95d8-fd39-11ea-ba2b-d05099d6ad05';
+        // SELECT UUID, Elo, (SELECT COUNT(*)+1 FROM UltraSkyWars WHERE Elo>x.Elo) AS Ranking FROM UltraSkyWars x WHERE x.UUID = '3f1f95d8-fd39-11ea-ba2b-d05099d6ad05';
         // SET @rank=0;
-        // SELECT UUID, @rank:=@rank+1 AS Rank, Elo FROM UltraSkyWarsApi ORDER BY Elo DESC;
+        // SELECT UUID, @rank:=@rank+1 AS Rank, Elo FROM UltraSkyWars ORDER BY Elo DESC;
         try {
             Connection con = getConnection();
-            PreparedStatement select = con.prepareStatement("SELECT UUID, Elo, (SELECT COUNT(*)+1 FROM UltraSkyWarsApi WHERE Elo>x.Elo) AS Ranking FROM UltraSkyWarsApi x WHERE x.UUID = '" + uuid.toString() + "';");
+            PreparedStatement select = con.prepareStatement("SELECT UUID, Elo, (SELECT COUNT(*)+1 FROM UltraSkyWars WHERE Elo>x.Elo) AS Ranking FROM UltraSkyWars x WHERE x.UUID = '" + uuid.toString() + "';");
             ResultSet result = select.executeQuery();
             if (result.next()){
                 return result.getInt("Ranking");
@@ -274,7 +274,7 @@ public class MySQLDatabase implements Database {
         ResultSet result;
         try {
             connection = getConnection();
-            String TOP = "SELECT UUID, Name, Elo FROM UltraSkyWarsApi ORDER BY Elo DESC LIMIT 10;";
+            String TOP = "SELECT UUID, Name, Elo FROM UltraSkyWars ORDER BY Elo DESC LIMIT 10;";
             select = connection.prepareStatement(TOP);
             result = select.executeQuery();
             int pos = 1;
@@ -297,7 +297,7 @@ public class MySQLDatabase implements Database {
         ResultSet result;
         try {
             connection = getConnection();
-            String TOP = "SELECT UUID, Name, Coins FROM UltraSkyWarsApi ORDER BY Coins DESC LIMIT 10;";
+            String TOP = "SELECT UUID, Name, Coins FROM UltraSkyWars ORDER BY Coins DESC LIMIT 10;";
             select = connection.prepareStatement(TOP);
             result = select.executeQuery();
             int pos = 1;
@@ -320,7 +320,7 @@ public class MySQLDatabase implements Database {
         ResultSet result;
         try {
             connection = getConnection();
-            String TOP = "SELECT UUID, Name, Kills FROM UltraSkyWarsApi ORDER BY Kills DESC LIMIT 10;";
+            String TOP = "SELECT UUID, Name, Kills FROM UltraSkyWars ORDER BY Kills DESC LIMIT 10;";
             select = connection.prepareStatement(TOP);
             result = select.executeQuery();
             int pos = 1;
@@ -343,7 +343,7 @@ public class MySQLDatabase implements Database {
         ResultSet result;
         try {
             connection = getConnection();
-            String TOP = "SELECT UUID, Name, Wins FROM UltraSkyWarsApi ORDER BY Wins DESC LIMIT 10;";
+            String TOP = "SELECT UUID, Name, Wins FROM UltraSkyWars ORDER BY Wins DESC LIMIT 10;";
             select = connection.prepareStatement(TOP);
             result = select.executeQuery();
             int pos = 1;
@@ -366,7 +366,7 @@ public class MySQLDatabase implements Database {
         ResultSet result;
         try {
             connection = getConnection();
-            String TOP = "SELECT UUID, Name, Deaths FROM UltraSkyWarsApi ORDER BY Deaths DESC LIMIT 10;";
+            String TOP = "SELECT UUID, Name, Deaths FROM UltraSkyWars ORDER BY Deaths DESC LIMIT 10;";
             select = connection.prepareStatement(TOP);
             result = select.executeQuery();
             int pos = 1;
@@ -387,7 +387,7 @@ public class MySQLDatabase implements Database {
         new BukkitRunnable() {
             @Override
             public void run(){
-                String SELECT = "SELECT * FROM UltraSkyWarsApi WHERE UUID=?";
+                String SELECT = "SELECT * FROM UltraSkyWars WHERE UUID=?";
                 if (enabled){
                     Connection connection = null;
                     PreparedStatement insert = null;
@@ -395,7 +395,7 @@ public class MySQLDatabase implements Database {
                     ResultSet result = null;
                     try {
                         connection = getConnection();
-                        String INSERT = "INSERT INTO UltraSkyWarsApi VALUES(?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE Name=?";
+                        String INSERT = "INSERT INTO UltraSkyWars VALUES(?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE Name=?";
                         insert = connection.prepareStatement(INSERT);
                         select = connection.prepareStatement(SELECT);
                         setValues(insert, p);
@@ -522,7 +522,7 @@ public class MySQLDatabase implements Database {
         if (enabled){
             try {
                 Connection connection = hikari.getConnection();
-                String INSERT = "INSERT INTO UltraSkyWarsApi VALUES(?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE Name=?";
+                String INSERT = "INSERT INTO UltraSkyWars VALUES(?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE Name=?";
                 PreparedStatement insert = connection.prepareStatement(INSERT);
                 insert.setString(1, uuid.toString());
                 insert.setString(2, name);
@@ -610,7 +610,7 @@ public class MySQLDatabase implements Database {
                         UUID uuid = UUID.fromString(result.getString("UUID"));
                         SWPlayer sw = UltraSkyWarsApi.getGson().fromJson(result.getString("Data"), SWPlayer.class);
                         sw.getStats().clear();
-                        String SAVE = "UPDATE UltraSkyWarsApi SET Data=? WHERE UUID=?;";
+                        String SAVE = "UPDATE UltraSkyWars SET Data=? WHERE UUID=?;";
                         PreparedStatement saveStatement = connection.prepareStatement(SAVE);
                         saveStatement.setString(1, UltraSkyWarsApi.getGson().toJson(sw, SWPlayer.class));
                         saveStatement.setString(2, uuid.toString());
