@@ -232,8 +232,9 @@
         <dependency>
             <groupId>io.github.whilein.fawe-legacy</groupId>
             <artifactId>bukkit</artifactId>
-            <version>888d0e9e</version>
-            <scope>provided</scope>
+            <version>6b699dc2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/dependencies/fawe-bukkit-6b699dc2.jar</systemPath>
             <exclusions>
                 <exclusion>
                     <artifactId>core</artifactId>
@@ -253,8 +254,9 @@
         <dependency>
             <groupId>io.github.whilein.fawe-legacy</groupId>
             <artifactId>core</artifactId>
-            <version>888d0e9e</version>
-            <scope>provided</scope>
+            <version>6b699dc2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/dependencies/fawe-core-6b699dc2.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -319,12 +321,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--<dependency>
-            <groupId>net.lymarket.lyapi</groupId>
-            <artifactId>lyapi-spigot</artifactId>
-            <version>1.2.12</version>
-            <scope>compile</scope>
-        </dependency>-->
+        <dependency>
+            <groupId>com.github.BarraR3port</groupId>
+            <artifactId>LyApi</artifactId>
+            <version>1.2.14</version>
+        </dependency>
 
         <dependency>
             <groupId>com.gmail.filoghost.holographicdisplays</groupId>

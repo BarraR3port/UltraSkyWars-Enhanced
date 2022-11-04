@@ -65,7 +65,10 @@
             <id>worldedit</id>
             <url>https://maven.enginehub.org/repo/</url>
         </repository>
-
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -198,14 +201,4 @@
         <module>nms_v1_19_R1</module>
     </modules>
 
-    <distributionManagement>
-        <repository>
-            <id>lymarket</id>
-            <url>https://repo.lydark.org/repository/lymarket/</url>
-        </repository>
-        <snapshotRepository>
-            <id>lymarket</id>
-            <url>https://repo.lydark.org/repository/lymarket/</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
